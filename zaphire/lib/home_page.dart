@@ -145,20 +145,7 @@ class MyHomepage extends State<MyHomePage> {
                       ),
                     ),
                   ),
-                  Container(
-                    margin: EdgeInsets.only(right: 20, top: 1),
-                    child: Align(
-                      alignment: Alignment.centerRight,
-                      child: Text(
-                        'See all',
-                        style: TextStyle(
-                          color: Color(0xff5e5d5d),
-                          fontSize: 19,
-                          fontFamily: 'Roboto',
-                        ),
-                      ),
-                    ),
-                  )
+                 
                 ],
               ),
             ),
@@ -360,8 +347,31 @@ class MyHomepage extends State<MyHomePage> {
                                     fontFamily: 'Roboto',
                                   ),
                                 ),
+                                
+                              ),
+                                const SizedBox(width: 20),
+                              Container(
+                                child: Text(
+                                  "Time: ",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 12,
+                                    fontFamily: 'Roboto',
+                                  ),
+                                ),
+                              ),
+                                Container(
+                                child: Text(
+                                  Time,
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 12,
+                                    fontFamily: 'Roboto',
+                                  ),
+                                ),
                               )
                             ],
+                            
                           ),
                         )
                       ],
