@@ -333,7 +333,7 @@ class MyHomepage extends State<MyHomePage> {
                                   "Date: ",
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     fontFamily: 'Roboto',
                                   ),
                                 ),
@@ -343,7 +343,7 @@ class MyHomepage extends State<MyHomePage> {
                                   Date,
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     fontFamily: 'Roboto',
                                   ),
                                 ),
@@ -355,7 +355,7 @@ class MyHomepage extends State<MyHomePage> {
                                   "Time: ",
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     fontFamily: 'Roboto',
                                   ),
                                 ),
@@ -365,7 +365,7 @@ class MyHomepage extends State<MyHomePage> {
                                   Time,
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 14,
                                     fontFamily: 'Roboto',
                                   ),
                                 ),
@@ -382,37 +382,52 @@ class MyHomepage extends State<MyHomePage> {
                 
               ),
             ),
-            Container(),
-            ElevatedButton(onPressed: () {},
-            
-            child:  Container(
-            height: 30,
-            width: 35,
-            alignment: Alignment.center,
-           
-          
               
-            
-             child: Text("Accept",
-              style: TextStyle(fontSize: 10.0),
-                    textAlign: TextAlign.center
-                    ))),
+            Column(
+              children: [
+                SizedBox(height: 45),
+               
+                 
+                   Row(
+                     children: [
+                      SizedBox(width: 40),
+                       ElevatedButton(onPressed: () {},
+                  
+            child: Text("Accept",
+                        style: TextStyle(fontSize: 10.0),
+                              textAlign: TextAlign.center
+                              )),
+                     ],
+                   ),
+                
+              ],
+            ),
            
-            SizedBox(width: 20),
-            ElevatedButton(onPressed: () {}, 
-            child:  Container(
-            
-            height: 30,
-            width: 35,
-            alignment: Alignment.center,
            
-          
+            
               
+                  Column(
+              children: [
+                SizedBox(height: 45),
+               
+                 
+                   Row(
+                     children: [
+                      SizedBox(width: 40),
+                       ElevatedButton(onPressed: () {},
+                  
+            child: Text("Reject",
+                        style: TextStyle(fontSize: 10.0),
+                              textAlign: TextAlign.center
+                              )),
+                     ],
+                   ),
+                
+              ],
+            ),
+                 
+               
             
-             child: Text("Reject",
-              style: TextStyle(fontSize: 10.0),
-                    textAlign: TextAlign.center
-                    ))),
           ],
       ),
       ),
